@@ -304,7 +304,7 @@ div.formation img.formation-img
     border-radius: 8%;
 }
 
-section.proyects h2.title-proyects
+section.projects h2.title-projects
 {
     font-family: 'Raleway';
     font-style:normal;
@@ -312,6 +312,91 @@ section.proyects h2.title-proyects
     color: #464646;
     font-weight: 1000;
 
+}
+
+section.projects div.container-projects
+{
+    padding: 3%;
+}
+
+div.first-project
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.container-img-project
+{
+    max-width: 150%;
+}
+
+div.container-img-project img.info-project
+{
+    width: 100%;
+    border-radius: 5%;
+}
+
+
+div.first-project div.container-description-project
+{
+    max-width: 50%;
+    text-align: start;
+    font-family: 'Raleway';
+    font-style:normal;
+    color: #464646;
+    font-weight: 1000;
+}
+
+
+div.container-description-project
+{
+    width: 45%;
+    height: 280px;
+    background: white;
+    border-radius: 5%;
+}
+
+div.container-img-project
+{
+    position: relative;
+    display: inline-block;
+}
+
+div.container-img-project:hover img
+{
+    filter: blur(8px);
+    transition: filter 0.2ms ease-in-out;
+}
+
+div.icons-source
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    align-items: center;
+}
+
+ div.container-img-project img:hover + .icons-source, .icons-source:hover 
+{
+    opacity: 1;
+}
+
+
+.icons-source a
+{
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 30px; 
+}
+
+.icons-source a:hover
+{
+    color: #333;
 }
 
 
@@ -342,5 +427,12 @@ section.proyects h2.title-proyects
         border-radius: 5px;
         margin-left: -8px;
         margin-top: 12%;
+    }
+
+    div.container-skills div.skills
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 }
