@@ -89,10 +89,6 @@ header
     cursor: pointer;
 }
 
-a[href^="#"]:not([href="#"]) {
-    scroll-behavior: smooth;
-}
-
 .about-me
 {
     justify-content: space-around;
@@ -550,6 +546,12 @@ footer.info-develop
         left: 0px;
         top: 0px;
     }
+
+    .description
+    {
+        width: 96.5%;
+    }
+
     div.container-skills
     {
         gap: 25px;

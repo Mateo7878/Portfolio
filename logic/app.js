@@ -1,11 +1,11 @@
-import { validate } from "./validate-form.js"
+import { validateForm } from "./validate-form.js";
 
-const inputs = document.querySelectorAll("input");
+const form = document.getElementById("contact-form");
 
-inputs.forEach( input => 
-    {
-        input.addEventListener('blur', (input) =>
-        {
-            validate(input.target);
-        })
-    });
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  if (validateForm()) {
+    form.submit();
+  }
+});
