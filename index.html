@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="./img/news-for-gamers-svgrepo-com.svg">
     <link href="/styles/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <main>
@@ -20,8 +22,8 @@
                 <a href="#about-me" class="element-nav">Sobre mi</a>
                 <a href="#skills-section" class="element-nav">Habilidades</a>
                 <a href="#academic-formation" class="element-nav">Formación</a>
-                <a href="#" class="element-nav">Proyecto</a>
-                <a href="#" class="element-nav">Contacto</a>
+                <a href="#proyects" class="element-nav">Proyecto</a>
+                <a href="#contact" class="element-nav">Contacto</a>
             </nav>
         </div>
         <div class="about-me">
@@ -33,9 +35,9 @@
                   además de ser estudiante ONE en Oracle Next Education.   
                 </p>
                 <nav class="nav-social">
-                    <a href="https://github.com/Mateo7878" class="element-social" target="_blank">Github</a>
-                    <a href="https://www.linkedin.com/in/josepablomateo/" class="element-social" target="_blank">Linkedin</a>
-                    <a href="#" class="element-social" target="_blank">Cv</a>
+                    <a href="https://github.com/Mateo7878" class="element-social" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square">GITHUB</i></a>
+                    <a href="https://www.linkedin.com/in/josepablomateo/" class="element-social" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square">Linkedin</i></a>
+                    <a href="#" class="element-social" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square">CV</i></a>
                 </nav>
             </div>
         </div>
@@ -115,25 +117,49 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
-            <h2 class="title-projects">Proyectos</h2>
-            <div class="container-projects">
+        <section class="proyects">
+            <a id="proyects"></a>
+            <h2 class="title-proyects">Proyectos</h2>
+            <div class="container-proyects">
                 <div class="first-proyect">
-                    <div class="container-img-project">
+                    <div class="container-img-proyect">
                         <img class="info-proyect" src="./img/Encriptador-min.png">
                         <div class="icons-source">
                             <a href="https://github.com/Mateo7878/Encriptador-de-Textos" target="_blank"><i class="fab fa-github"></i></a></a>
                             <a href="https://encriptador-de-textos.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
-                         <div class="container-description-project">
-                        <p class="description-project">El proyecto consiste en un encriptador de texto el cuál recibe 
-                        </p>
+                         <div class="container-description-proyect">
+                         <p class="description-proyect">El proyecto consiste en un encriptador de texto el cuál recibe 
+                         </p>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="forms">
+            <a id="contact"></a>
+            <div class="container-forms">
+                <img class="img-contact" src="./img/contacto.png">
+            <div class="container-contact">
+                <h2 class="title-contact">Contacto</h2>
+                <form class="contact">
+                    <label class="label-forms">Nombre</label>
+                    <input class="input-info" type="text" placeholder="Nombre" data-type="name">
+                    <label class="label-forms">Email</label>
+                    <input class="input-info" type="email" placeholder="example@outlook.com" data-type="email">
+                    <label class="label-forms">Asunto</label>
+                    <input class="input-info" type="text" placeholder="Asunto" data-type="name">
+                    <label class="label-forms">Mensaje</label>
+                    <input class="input-message" type="text" placeholder="Mensaje" data-type="name">
+                    <button class="send-button" type="button">Enviar Mensaje</button>
+                </form>
+            </div>
+            </div>
+        </section>
+        <footer class="info-develop">
+            <p>Desarrollado por José Pablo Mateo Cárdenas</p>
+        </footer>
     </main>
-<script src="./logic/validate-form.js"></script>
+<script type="module" src="./logic/app.js"></script>
 </body>
 </html>
